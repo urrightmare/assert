@@ -1,0 +1,570 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', sans-serif;
+    font-weight: 400;
+    /* font-size: 14px; */
+    background: #0D0D10;
+    /* letter-spacing: 1.2px; */
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 1170px;
+    padding: 0 70px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header {
+    padding-top: 30px;
+} */
+
+header .navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+header .navbar .navbar-brand {
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1337;
+}
+
+header .navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar .navbar-nav .navbar-link {
+    margin-left: 10px;
+}
+
+header .navbar .navbar-nav .navbar-link a {
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+header .navbar .navbar-nav .navbar-link a:last-child {
+    margin-right: 0;
+}
+
+header .navbar .navbar-nav .navbar-link a svg {
+    margin-left: 5px;
+}
+
+header .navbar .navbar-btns {
+    display: flex;
+}
+
+svg {
+    fill: none;
+}
+
+header .navbar .navbar-btns a {
+    background: #212020;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+header .navbar .navbar-btns a:last-child {
+    margin-right: 0;
+}
+
+header .navbar .navbar-btns a p {
+    margin-right: 15px;
+}
+
+header .navbar .navbar-btns a p:last-child {
+    margin-right: 0;
+}
+
+header .navbar .navbar-btns a.search svg {
+    margin-right: 10px;
+}
+
+header .navbar-ot {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    padding: 0 70px;
+    margin: auto;
+}
+
+header .navbar-ot::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(40, 39, 39, .7);
+    border-radius: 3px;
+    z-index: -1;
+}
+
+#header-wrapper {
+    position: relative;
+    height: 80vh;
+}
+
+#header-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://nixware.cc/asserts/img/bg-header-wrapper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#header-wrapper .content {
+    padding-top: 20px;
+    width: 300px;
+}
+
+#header-wrapper .content .games {
+    display: flex;
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+#header-wrapper .content .games svg {
+    margin-right: 15px;
+}
+
+#header-wrapper .content .games svg:last-child {
+    margin-right: 0;
+}
+
+#header-wrapper .content h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+#header-wrapper .content .btn {
+    background: #3060DA;
+    font-weight: 700;
+    font-size: 13px;
+    height: 35px;
+    width: 170px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-wrapper .content .btn:hover {
+    background: #3060da88;
+    font-weight: 700;
+    font-size: 13px;
+    height: 35px;
+    width: 170px;
+    text-decoration: none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-wrapper .content .link {
+    display: flex;
+    align-items: center;
+}
+
+#header-wrapper .content .link a {
+    margin-right: 10px;
+}
+
+#header-wrapper .content .link a:last-child {
+    margin-right: 0;
+}
+
+#main {
+    position: relative;
+}
+
+#main .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('https://nixware.cc/asserts/img/bg-features.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding-bottom: 100px;
+}
+
+#main .content .section-title,
+#preview .section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+#main .content .media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#main .content .media .function-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 40%;
+    min-width: 40%;
+    height: 260px;
+}
+
+#main .content .media .function-info .text {
+    font-size: 24px;
+}
+
+#main .content .media .function-info .functions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main .content .media .function-info .functions p {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .45s all;
+}
+
+#main .content .media .function-info .functions p.active,
+#main .content .media .function-info .functions p:hover {
+    background: #3060DA;
+}
+
+#main .content .media .video-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    max-width: 40%;
+    min-width: 40%;
+    height: 260px;
+    padding: 20px;
+}
+
+#main .content .media .video-block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .8);
+    z-index: 2;
+}
+
+#main .content .media .video-block img {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+}
+
+#main .content .media .video-block .header,
+#main .content .media .video-block .footer {
+    position: relative;
+}
+
+#main .content .media .video-block .header {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+
+#main .content .media .video-block .header p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#main .content .media .video-block .header p svg {
+    margin-right: 8px;
+}
+
+#main .content .media .video-block .header span {
+    color: #BFBFBF;
+    font-size: 16px;
+}
+
+#main .content .media .video-block .footer {
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+#main .content .media .video-block .footer .line-hr {
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    margin: 0 10px;
+}
+
+#main .content .media .video-block .footer p {
+    font-size: 16px;
+}
+
+#preview {
+    padding-bottom: 70px;
+    margin-top: 50px;
+}
+
+#preview .section-title {
+    margin-bottom: 20px;
+}
+
+#preview .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preview .content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#preview .content .cheat-screens {
+    width: 70%;
+}
+
+.owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.owl-dots .owl-dot {
+    height: 7px !important;
+    width: 7px !important;
+    background: #fff !important;
+    border-radius: 50% !important;
+    margin-right: 7px !important;
+}
+
+.owl-dots .owl-dot:last-child {
+    margin-right: 0 !important;
+}
+
+.owl-dots .owl-dot.active {
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.mobile-btn {
+    display: none;
+    width: 35px;
+    position: relative;
+    z-index: 1337;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(40, 39, 39, 1);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    z-index: 500;
+}
+
+.mobile-menu.show {
+    display: flex;
+}
+
+.mobile-menu .navbar-link,
+.mobile-menu .navbar-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.mobile-menu .navbar-btns a {
+    margin-right: 0 !important;
+}
+
+.mobile-menu a {
+    margin-bottom: 20px;
+}
+
+.mobile-menu .navbar-btns a:last-child {
+    margin-bottom: 0;
+}
+
+.mobile-menu .navbar-link a {
+    font-size: 22px;
+}
+
+.mobile-menu .navbar-btns a {
+    padding: 15px 25px !important;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 1600px) {
+    body {
+/*        background-color: #3BCEAC;*/
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    body {
+/*        background-color: #FFD23F;*/
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    header .navbar-ot {
+        width: 100%;
+    }
+    
+    #main .content .media {
+        justify-content: space-between;
+    }
+    
+    #main .content .media .function-info,
+    #main .content .media .video-block {
+        max-width: 45%;
+        min-width: 45%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+/*        background-color: #EE4266;*/
+    }
+    
+    #main .content .media {
+        flex-direction: column;
+    }
+    
+    #main .content .media .function-info,
+    #main .content .media .video-block {
+        max-width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+    
+    #main .content .media .function-info .functions {
+        margin-top: 40px;
+    }
+    
+    #main .content .media .video-block {
+        height: 260px;
+        margin-top: 40px;
+    }
+    
+    #preview .content .cheat-screens {
+        width: 100%;
+    }
+    
+    .owl-dots .owl-dot {
+        margin-right: 14px;
+        height: 10px !important;
+        width: 10px !important;
+    }
+    
+    .owl-dots .owl-dot.active {
+        height: 15px !important;
+        width: 15px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+/*        background-color: #540D6E;*/
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    header .navbar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    
+    header .navbar-brand {
+        margin-bottom: 0 !important;
+    }
+    
+    header .mobile-btn {
+        display: flex;
+    }
+    
+    header .navbar-nav {
+        display: none !important;
+    }
+    
+    header .navbar-ot {
+        padding: 0 30px;
+    }
+    
+    #header-wrapper .content .games {
+        margin-bottom: 50px;
+    }
+    
+    #header-wrapper {
+        height: 60vh;
+    }
+}
